@@ -65,7 +65,7 @@ class OnboardingFirstScreenState extends State<OnboardingFirstScreen> {
       bottomSheet: Container(
         height: 200,
         color: Colors.white,
-        padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 30),
+        padding: const EdgeInsets.symmetric(horizontal: 32),
         child: Column(
           children: [
             SizedBox(
