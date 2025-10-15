@@ -177,6 +177,14 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                 ),
                 controller: controller,
                 count: totalPages,
+
+                onDotClicked: (index) {
+                  controller.animateToPage(
+                    index,
+                    duration: const Duration(milliseconds: 600),
+                    curve: Curves.easeInOut,
+                  );
+                },
               ),
             ),
 
