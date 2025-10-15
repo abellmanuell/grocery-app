@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:grocery_app/onboarding/onboarding_screen.dart';
+import 'package:grocery_app/onboarding/firstpage_onboarding_screen.dart';
 
 void main() {
   runApp(const MyApp());

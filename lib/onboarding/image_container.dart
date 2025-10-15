@@ -12,8 +12,8 @@ Widget buildImageContainer(
         clipBehavior: Clip.hardEdge,
         decoration: const BoxDecoration(
           borderRadius: BorderRadius.only(
-            bottomLeft: Radius.circular(180),
-            bottomRight: Radius.circular(180),
+            bottomLeft: Radius.circular(200),
+            bottomRight: Radius.circular(200),
           ),
         ),
         child: Stack(
@@ -21,7 +21,7 @@ Widget buildImageContainer(
           children: [
             ClipRRect(
               child: Image.asset(
-                height: 550,
+                height: 520,
                 width: double.infinity,
                 "assets/images/onboarding/love-background.png",
                 fit: BoxFit.cover,
