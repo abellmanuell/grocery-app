@@ -33,8 +33,8 @@ class BestDeal extends StatelessWidget {
             shrinkWrap: true,
             physics: const NeverScrollableScrollPhysics(),
             gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-              mainAxisSpacing: 20,
-              crossAxisSpacing: 20,
+              mainAxisSpacing: 10,
+              crossAxisSpacing: 10,
               crossAxisCount: 2,
               childAspectRatio: 0.78,
             ),

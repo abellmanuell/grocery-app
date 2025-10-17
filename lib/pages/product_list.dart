@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:grocery_app/global_variables.dart';
 import 'package:grocery_app/pages/best_deal.dart';
 import 'package:grocery_app/pages/category_page.dart';
+import 'package:grocery_app/pages/notification_page.dart';
 import 'package:grocery_app/pages/product_page.dart';
 import 'package:grocery_app/widgets/promotional_banner.dart';
 import 'package:grocery_app/widgets/category_item.dart';
@@ -57,7 +58,15 @@ class ProductList extends StatelessWidget {
                     style: IconButton.styleFrom(
                       backgroundColor: const Color.fromRGBO(246, 246, 246, 1),
                     ),
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (context) {
+                            return const NotificationPage();
+                          },
+                        ),
+                      );
+                    },
                     icon: const Icon(Icons.notifications, size: 25),
                   ),
                 ],
@@ -141,8 +150,8 @@ class ProductList extends StatelessWidget {
                 shrinkWrap: true,
                 physics: const NeverScrollableScrollPhysics(),
                 gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                  mainAxisSpacing: 20,
-                  crossAxisSpacing: 20,
+                  mainAxisSpacing: 10,
+                  crossAxisSpacing: 10,
                   crossAxisCount: 2,
                   childAspectRatio: screenWidthSize < 764 ? 0.78 : 1.3,
                 ),

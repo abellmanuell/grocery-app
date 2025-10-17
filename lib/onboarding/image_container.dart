@@ -21,7 +21,7 @@ Widget buildImageContainer(
           children: [
             ClipRRect(
               child: Image.asset(
-                height: 520,
+                height: 480,
                 width: double.infinity,
                 "assets/images/onboarding/love-background.png",
                 fit: BoxFit.cover,
@@ -39,7 +39,7 @@ Widget buildImageContainer(
             ),
 
             Transform.translate(
-              offset: const Offset(0, 380),
+              offset: const Offset(0, 300),
               child: Container(
                 width: double.infinity,
                 height: 200,
@@ -62,7 +62,7 @@ Widget buildImageContainer(
 
       Center(
         child: Container(
-          padding: const EdgeInsets.symmetric(vertical: 45, horizontal: 30),
+          padding: const EdgeInsets.symmetric(vertical: 35, horizontal: 30),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [

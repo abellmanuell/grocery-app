@@ -26,7 +26,7 @@ class OnboardingFirstScreenState extends State<OnboardingFirstScreen> {
           },
           children: [
             buildImageContainer(
-              imageHeight: 440,
+              imageHeight: 360,
               "assets/images/onboarding/lady-and-cabbage.png",
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
               Text.rich(
@@ -65,7 +65,7 @@ class OnboardingFirstScreenState extends State<OnboardingFirstScreen> {
       bottomSheet: Container(
         height: 200,
         color: Colors.white,
-        padding: const EdgeInsets.symmetric(horizontal: 32),
+        padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 30),
         child: Column(
           children: [
             SizedBox(
